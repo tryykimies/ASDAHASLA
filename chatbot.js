@@ -22,10 +22,13 @@ function addMessage(sender, message) {
 
 function getBotResponse(userInput) {
     const responses = {
-        "hello": "Hi there! How can I help you?",
-        "how are you": "I'm just a bot, but I'm doing great! 😊",
-        "bye": "Goodbye! Take care!",
-        "default": "Sorry, I don't understand that. Can you rephrase?"
+        "hello": "Hey there, sugar! What’s on your mind? 😏",
+        "how are you": "Living the fabulous life, darling. Just like I always do. 😘",
+        "what's up": "Oh, just waiting for you to say something interesting. 😈",
+        "ladyboy": "Oh honey, I am *LadyBOyAI*, all about that fabulous life. 💅",
+        "can you help me": "Of course, darling! But you better ask *nicely*. 😏",
+        "bye": "Leaving so soon? Well, don't make me miss you too much. 😘",
+        "default": "Mmmm... I don't understand that. But don't worry, I’m not judging you. 😜"
     };
     return responses[userInput.toLowerCase()] || responses["default"];
 }
