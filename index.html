@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LadyboyAI Chatbot</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="chat-container">
-    <div class="chat-box" id="chat-box">
-      <!-- Chat messages will appear here -->
-    </div>
-    <input type="text" id="user-input" placeholder="Ask me something..." />
-    <button onclick="sendMessage()">Send</button>
-  </div>
+    <header>
+        <h1>Chatbot</h1>
+    </header>
 
-  <script src="script.js"></script>
+    <div class="chatbox">
+        <h3>Chat with me!</h3>
+        <div id="chatbox-content">
+            <div class="bot-message">Hello! How can I assist you?</div>
+        </div>
+        <input type="text" id="user-input" placeholder="Type your message..." onkeypress="handleInput(event)">
+    </div>
+
+    <script src="chatbot.js"></script>
 </body>
 </html>
